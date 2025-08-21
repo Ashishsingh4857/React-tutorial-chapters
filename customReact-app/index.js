@@ -12,7 +12,7 @@ const reactElement = {
 		href: "https://www.w3schools.com/react/react_first_app.asp",
 		target: "_blank",
 	},
-	Children: "click here to visit google",
+	Children: "click here to visit",
 };
 const container = document.getElementById("root");
 customRender(reactElement, container);
