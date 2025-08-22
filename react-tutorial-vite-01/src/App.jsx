@@ -1,36 +1,16 @@
 import React, { useState } from "react";
+import Card from "./components/card";
 function App() {
-	let [counter, updatedCount] = useState(1);
-
-	let addValue = () => {
-		if (counter === 2) {
-			return;
-		}
-		updatedCount(counter + 1);
-	};
-
-	let removeValue = () => {
-		if (counter === 0) {
-			return;
-		}
-		updatedCount(counter - 1);
+	let student = {
+		name: "jonny Sins",
+		email: "jonny123@gmail.com",
+		phone: 9876543210,
+		address: "house no 69",
 	};
 
 	return (
 		<>
-			<h1> hello world</h1>
-			<h2 className="count">counter {counter} </h2>
-			<button
-				id="add"
-				onClick={() => addValue()}>
-				{" "}
-				add value
-			</button>
-			<button
-				className="remove"
-				onClick={() => removeValue()}>
-				remove value
-			</button>
+			<Card user={student} />
 		</>
 	);
 }
