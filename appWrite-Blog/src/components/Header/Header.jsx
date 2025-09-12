@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-
+import Logo from "../Logo";
 function Header() {
 	const authStatus = useSelector((state) => state.auth.status);
 	const navItems = [
@@ -39,7 +39,7 @@ function Header() {
 				<nav className="flex">
 					<div className="mr-4">
 						<Link to="/">
-							{/* <Logo width="70px" /> */}
+							<Logo width="70px" />
 						</Link>
 					</div>
 					<ul className="flex mx-auto">
